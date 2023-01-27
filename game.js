@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const dino = document.querySelector(".dino");
   const grid = document.querySelector(".grid");
   const alert = document.getElementById("alert");
+  const body = document.querySelector("body");
   let isJumping = false;
   let gravity = 0.9;
   let isGameOver = false;
@@ -57,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert.innerHTML = "Game Over";
         isGameOver = true;
         //remove all children
+        body.removeChild(body.firstChild)
         while (grid.firstChild) {
           grid.removeChild(grid.lastChild);
         }
