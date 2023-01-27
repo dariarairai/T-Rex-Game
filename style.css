@@ -2,7 +2,7 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  background-color: red;
+  background-color: url(t-rex.png);
   bottom: 0px;
 }
 
@@ -10,6 +10,6 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  background-color: orange;
+  background-color: url(cactus.png);
   bottom: 0;
 }
